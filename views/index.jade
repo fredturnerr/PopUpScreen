@@ -1,0 +1,90 @@
+extends layout
+
+block content
+  body
+    //- h1= title
+    //- p Welcome to #{title}
+    .container
+      .row
+        .col-lg-12
+          nav.breadcrumb
+            a.breadcrumb-item(href='#') Home
+            a.breadcrumb-item(href='#') Women
+            a.breadcrumb-item(href='#') Facil Skin Care
+            a.breadcrumb-item(href='#') Moisturizers
+            span.breadcrumb-item.active Oley Regenerist Micro-Sculpting Face Cream Moisturizer, Fragrance-Free 1-7 oz.
+          br
+          br
+          br
+        .container
+          .row
+            .col-lg-6
+              img.img-fluid(data-src='holder.js/100px250', alt='100%x250', style='height: 500px; width: 500px; display: block;', src='https://camo.githubusercontent.com/f8ea5eab7494f955e90f60abc1d13f2ce2c2e540/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f323037383234352f3235393331332f35653833313336322d386362612d313165322d383435332d6536626439353663383961342e706e67', data-holder-rendered='true')
+            .col-lg-6
+              h5 Oley Regenerist Micro-Sculpting Face Cream Moisturizer, Fragrance-Free
+              h5 1-7 oz.
+              br
+              form
+                p
+                  b item# 3456789098
+                .form-group
+                  label(for='exampleInputEmail1') Size
+                  p#emailHelp.form-text.text-muted 1.7 oz.
+                .form-group
+                  label(for='exampleFormControlSelect1') Quantity
+                  select#exampleFormControlSelect1.form-control
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                h4
+                  label(for='exampleInputEmail1')
+                    b $ 23.99
+                button.btn.btn-primary(type='submit') Add to Card
+                button.btn.btn-secondary(type='submit') Add to List
+                br
+                br
+                small#emailHelp.form-text.text-muted Lorem Ipsum dolor sit amet
+        .container
+          #accordion(role='tablist')
+            .card
+              #headingOne.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                    | Description
+              #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+                .card-body
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum efficitur porttitor. Maecenas at euismod augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur faucibus tristique convallis. Curabitur fringilla eros ac odio bibendum, sit amet auctor mauris efficitur. Mauris semper sapien nec dui suscipit, sit amet tincidunt nisi vulputate. Sed ac risus pretium, tempus felis eget, porta est. Curabitur fermentum augue sed pretium varius. Suspendisse in sem consectetur, semper ipsum non, maximus lectus. Pellentesque egestas suscipit nunc, et elementum quam posuere eget. Nulla tincidunt lectus sed euismod tempor.
+                  | Etiam luctus augue pellentesque, vulputate tellus euismod, commodo magna. Nulla volutpat fermentum nisl vitae iaculis. Fusce facilisis nisl semper enim ullamcorper sollicitudin. Duis nec tempus eros. Nunc sit amet iaculis velit. Nulla facilisi. Ut id sagittis ex.
+                  p
+                  |               Nulla volutpat aliquam velit
+                  ul
+                    li Phasellus iaculis neque
+                    li Purus sodales ultricies
+                    li Vestibulum laoreet porttitor sem
+                    li Ac tristique libero volutpat at
+            .card
+              #headingTwo.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    | Products Details
+              #collapseTwo.collapse.show(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+                .card-body
+                  p Ingredients
+                  |               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            .card
+              #headingThree.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                    | Additional Content
+              #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+                .card-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      // /row
+    // /container
+    script(type='text/javascript').
+      $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+      })
+

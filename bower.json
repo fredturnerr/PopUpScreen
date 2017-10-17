@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "description": "",
+  "main": "/public/assets",
+  "authors": [
+    "Jesus Montesinos"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-beta",
+    "materialize": "^0.100.2",
+    "font-awesome": "Font-Awesome#^4.7.0"
+  }
+}
